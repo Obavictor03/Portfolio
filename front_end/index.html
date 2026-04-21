@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Obaro | Fullstack Developer</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-950 text-white transition">
+    <!-- NAV -->
+    <header class="fixed w-full bg-gray-900/70 backdrop-blur z-50">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="font-bold text-xl">VO.</h1>
+
+        <div
+          class="flex items-center gap-4 bg-blue-500 text-white text-sm font-bold px-6 py-1 rounded-md cursor-pointer"
+        >
+          <a
+            href="https://docs.google.com/document/d/156SF4qKHzJ-qnWfvI0lRPFZiV6ZFrNZww45ZP2Newv0/edit?usp=drivesdk"
+            >CV</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="h-screen flex items-center justify-center text-center px-6">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Victor 👋</h1>
+
+        <p id="typing" class="text-lg text-gray-400 mb-6"></p>
+
+        <a
+          href="#projects"
+          class="bg-blue-500 text-white text-sm font-bold px-6 py-3 rounded-xl mt-2"
+        >
+          View Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      class="flex flex-col items-center justify-center text-center max-w-5xl mb-20 mx-auto px-6"
+    >
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-400">
+        Full-Stack Developer with years of experience building scalable web
+        applications and RESTful APIs. Skilled in developing responsive frontend
+        interfaces and robust backend systems using React, Python, and Django
+        REST Framework. Experienced in API design, database management, and
+        collaborating with UI/UX teams to deliver modern digital products.
+        Passionate about clean code, scalable architecture, and building
+        high-performance web solutions. Currently seeking remote opportunities
+        in Frontend, Backend, or Full-Stack development with global teams.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="bg-gray-900 py-20 text-center">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10">Tech Stack</h2>
+
+        <div class="grid md:grid-cols-3 mx-20 gap-6">
+          <div class="p-6 bg-gray-800 rounded-xl">
+            <h3 class="font-semibold mb-2">Frontend</h3>
+            <p class="text-gray-400">HTML, CSS, JavaScript, React, Tailwind</p>
+          </div>
+
+          <div class="p-6 bg-gray-800 rounded-xl">
+            <h3 class="font-semibold mb-2">Backend</h3>
+            <p class="text-gray-400">Python, Django, DRF</p>
+          </div>
+
+          <div class="p-6 bg-gray-800 rounded-xl">
+            <h3 class="font-semibold mb-2">Tools</h3>
+            <p class="text-gray-400">Git, Docker, REST APIs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">My Projects</h2>
+      <div id="projectsContainer" class="grid md:grid-cols-2 gap-8"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="py-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+
+      <form id="contactForm" class="max-w-xl mx-auto space-y-4">
+        <input
+          name="name"
+          placeholder="Your Name"
+          required
+          class="w-[75%] sm:w-full p-2 rounded bg-gray-800"
+        />
+        <input
+          name="email"
+          placeholder="Email"
+          required
+          class="w-[75%] sm:w-full p-2 rounded bg-gray-800"
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          required
+          class="w-[75%] sm:w-full p-2 rounded bg-gray-800"
+        ></textarea>
+
+        <button class="bg-blue-500 text-white px-6 py-3 rounded">
+          Send Message
+        </button>
+      </form>
+
+      <div class="mt-10 flex justify-center gap-4">
+        <a
+          href="https://github.com/Obavictor03"
+          target="_blank"
+          class="text-gray-400 hover:text-white mx-2"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/victor-obaro-964a683b5"
+          target="_blank"
+          class="text-gray-400 hover:text-white mx-2"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://x.com/obaro_vict93493"
+          target="_blank"
+          class="text-gray-400 hover:text-white mx-2"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-5">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-gray-500 dark:text-gray-400">
+          &copy; 2026 Victor Obaro. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
