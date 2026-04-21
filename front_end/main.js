@@ -27,7 +27,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
 
   const formData = Object.fromEntries(new FormData(e.target));
 
-  const res = await fetch("https://portfolio-z4lt.onrender.com/api/contact/", {
+  const res = await fetch("https://portfolio-pvre.onrender.com/api/contact/", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(formData)
@@ -38,7 +38,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
 
 /* PROJECTS */
 async function loadProjects() {
-  const res = await fetch("https://portfolio-z4lt.onrender.com/api/projects/");
+  const res = await fetch("https://portfolio-pvre.onrender.com/api/projects/");
   const projects = await res.json();
 
   const container = document.getElementById("projectsContainer");
